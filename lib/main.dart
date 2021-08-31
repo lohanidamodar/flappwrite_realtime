@@ -48,8 +48,7 @@ class _HomePageState extends State<HomePage> {
 
   login() async {
     try {
-      await Account(client)
-          .createSession(email: 'test@testme.com', password: 'testtest');
+      await Account(client).createAnonymousSession();
     } on AppwriteException catch (e) {
       print(e.message);
     }
