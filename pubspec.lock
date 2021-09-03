@@ -4,12 +4,10 @@ packages:
   appwrite:
     dependency: "direct main"
     description:
-      path: "."
-      ref: feat-new-realtime
-      resolved-ref: "6e15dca6ab7819c79e72125577fd7fcf01625659"
-      url: "https://github.com/lohanidamodar/sdk-for-flutter"
-    source: git
-    version: "0.6.4"
+      name: appwrite
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   async:
     dependency: transitive
     description:
@@ -66,13 +64,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
-  cupertino_icons:
-    dependency: "direct main"
-    description:
-      name: cupertino_icons
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.3"
   device_info_plus:
     dependency: transitive
     description:

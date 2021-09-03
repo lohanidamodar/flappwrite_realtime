@@ -75,15 +75,15 @@ class _HomePageState extends State<HomePage> {
     // listen to changes
     subscription!.stream.listen((data) {
       // data will consist of `event` and a `payload`
-      if (data["payload"] != null) {
-        switch (data["event"]) {
+      if (data.payload.isNotEmpty) {
+        switch (data.event) {
           case "database.documents.create":
-            var item = data['payload'];
+            var item = data.payload;
             items.add(item);
             setState(() {});
             break;
           case "database.documents.delete":
-            var item = data['payload'];
+            var item = data.payload;
             items.removeWhere((it) => it['\$id'] == item['\$id']);
             setState(() {});
             break;
